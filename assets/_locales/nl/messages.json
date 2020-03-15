@@ -92,12 +92,20 @@
     "description": "Dropped"
   },
   "UI_Status_planTo_anime": {
-    "message": "Ingepland om te Kijken",
+    "message": "Ingepland om te kijken",
     "description": "Plan to Watch"
   },
   "UI_Status_planTo_manga": {
-    "message": "Ingepland om te Lezen",
+    "message": "Ingepland om te lezen",
     "description": "Plan to Read"
+  },
+  "UI_Status_Rewatching_anime": {
+    "message": "Opnieuw aan het kijken",
+    "description": "Status to rewatch anime"
+  },
+  "UI_Status_Rewatching_manga": {
+    "message": "Opnieuw aan het lezen",
+    "description": "Status to reread manga"
   },
   "UI_Episode": {
     "message": "Aflevering:",
@@ -217,9 +225,25 @@
     "message": "Starten met kijken?",
     "description": "Start watching anime message"
   },
+  "syncPage_flashConfirm_rewatch_finish_anime": {
+    "message": "Compleet markeren?",
+    "description": "Finish rewatching anime message"
+  },
+  "syncPage_flashConfirm_rewatch_finish_manga": {
+    "message": "Compleet markeren?",
+    "description": "Finish rereading manga message"
+  },
   "syncPage_flashConfirm_start_manga": {
     "message": "Starten met lezen?",
     "description": "Start reading manga message"
+  },
+  "syncPage_flashConfirm_rewatch_start_anime": {
+    "message": "Anime opnieuw kijken?",
+    "description": "Start rewatching anime message"
+  },
+  "syncPage_flashConfirm_rewatch_start_manga": {
+    "message": "Manga opnieuw lezen?",
+    "description": "Start rereading manga message"
   },
   "syncPage_flashConfirm_Anime_Correct": {
     "message": "Is \"$anime$\"  wat je zocht?",
@@ -390,6 +414,10 @@
   "correction_NewUrlReset": {
     "message": "Reset MyAnimeList url",
     "description": "URL reset"
+  },
+  "correction_DBRequest": {
+    "message": "Verzend database correctie verzoek?",
+    "description": "Popup that shows up when the user corrects an anime and asks if this change should be sent to the dabase for correction"
   },
   "overview_Continue_anime": {
     "message": "Verder gaan met kijken",
@@ -563,6 +591,10 @@
     "message": "Hervat kijk links",
     "description": "Resume watching links"
   },
+  "settings_miniMAL_floatButtonStealth": {
+    "message": "Verborgen UI modus",
+    "description": "Stealth UI mode. Lowers the visibility of some malSync UI elements"
+  },
   "settings_miniMAL_floatButtonHide": {
     "message": "Verberg miniMAL menu knop",
     "description": "Hide miniMAL floating menu button"
@@ -619,6 +651,18 @@
     "message": "Automatisch hervatten",
     "description": "Auto resume video where you left off toggle"
   },
+  "settings_autoNextEp": {
+    "message": "Autoplay de volgende aflevering",
+    "description": "Autoplays the next episode after the video ends"
+  },
+  "settings_Shortcuts_Correction": {
+    "message": "Open de anime relatie correctie popup",
+    "description": "Text for the correction ui shortcut"
+  },
+  "settings_Shortcuts_Next_Episode": {
+    "message": "Open de volgende aflevering snelkoppeling",
+    "description": "Description for the next episode shortcut option"
+  },
   "settings_Shortcuts_Skip_Forward": {
     "message": "Sla de opening over",
     "description": "Description for the the opening skip shortcut"
@@ -626,6 +670,10 @@
   "settings_Shortcuts_Skip_Backward": {
     "message": "Spring terug naar het begin van de opening",
     "description": "Description for the the opening skip shortcut"
+  },
+  "settings_Shortcuts_Click": {
+    "message": "Klik om snelkoppeling op te geven",
+    "description": "Shown if no shortcut is set for an option"
   },
   "settings_introSkip": {
     "message": "Sla de opening lengte $Seconds$ seconden over",
@@ -681,9 +729,25 @@
     "message": "Deze optie voegt Firefox Multi-Account Containers support. Zorg ervoor dat je browser opnieuw opstart na het aan doen van deze optie",
     "description": "Strict Cookies - Text"
   },
+  "settings_highlightAllEp": {
+    "message": "Highlight alle Afleveringen/Hoofdstukken",
+    "description": "Highlight all Episodes/Chapters"
+  },
+  "settings_highlightAllEp_Text": {
+    "message": "Deze optie zal alle bekeken hoofdstukken/afleveringen in de lijst highlighten van bepaalde Anime/Manga sites",
+    "description": "Highlight all Episodes/Chapters - Text"
+  },
   "settings_ClearCache": {
     "message": "Maak Cache schoon",
     "description": "Clear Cache"
+  },
+  "settings_presenceHidePage": {
+    "message": "Laat de MAL-Sync icoon zien in plaats van de pagina icoon.",
+    "description": "Option on the settings page to replace the anime streaming page icon in the discord rich text presence with the mal-sync icon. If the user does not want to show everyone what page he is using"
+  },
+  "settings_shortcut_tooltip": {
+    "message": "Het is niet aanbevolen om alleen een knop te zetten als snelkoppeling.",
+    "description": "Shows this message if the users has only a single key set as shortcut"
   },
   "updateCheck_Refresh": {
     "message": "Ververs",
@@ -842,5 +906,23 @@
         "example": "</a>"
       }
     }
+  },
+  "Discord_rpc_browsing": {
+    "message": "$Page$ aan het browsen",
+    "description": "Discord rich Presence text if on overview page",
+    "placeholders": {
+      "Page": {
+        "content": "$1",
+        "example": "Mangadex"
+      }
+    }
+  },
+  "nextEpShort_no_support": {
+    "message": "Deze pagina ondersteunt niet de snelkoppeling van naar het gaan naar de volgende aflevering.",
+    "description": "Error message if the page does not support opening the next episode after pressing the shortcut"
+  },
+  "nextEpShort_no_nextEp": {
+    "message": "Kan het volgende aflevering niet vinden.",
+    "description": "Error message if no next episode could be found after pressing the next episode shortcut"
   }
 }
